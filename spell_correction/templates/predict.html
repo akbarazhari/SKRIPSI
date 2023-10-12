@@ -1,0 +1,16 @@
+{% extends "base.html" %} {% block content %}
+
+<div class="float-container">
+  <div class="float-child">
+    <h2 class="a">Uploaded Image</h2>
+    <div class="green"><p>path: {{ path }}</p></div>
+    <div class="green"><p>fname: {{ fname }}</p></div>
+    <div class="green"><p>teks: {{ teks }}</p></div>
+  </div>
+  <br />
+  <form action="/download">
+    <button type="submit">download Hasil</button>
+  </form>
+</div>
+
+{% endblock %}
